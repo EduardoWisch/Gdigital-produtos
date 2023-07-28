@@ -57,6 +57,7 @@ function deletaProduto(index) {
     produtos.splice(index, 1)
     localStorage.setItem("produtos", JSON.stringify(produtos))
     listaProdutos()
+    limpaCampos()
 }
 
 function atualizaProduto(index) {
