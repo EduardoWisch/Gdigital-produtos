@@ -58,6 +58,9 @@ function deletaProduto(index) {
     localStorage.setItem("produtos", JSON.stringify(produtos))
     listaProdutos()
     limpaCampos()
+    document.getElementById("action").innerText = "Cadastrar Produto Produto"
+    document.getElementById("btn-cadastra").style.display = "block"
+    document.getElementById("btn-atualiza").style.display = "none"
 }
 
 function atualizaProduto(index) {
